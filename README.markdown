@@ -8,10 +8,13 @@
 - [License](#license)
 
 ## About
-I'm a user-friendlier drop-in replacement for the standard select with multiple attribute activated.
+I'm a user-friendlier drop-in replacement for the standard select with multiple attribute activated. A Sortable functionality has been added for every clone of the selection list, using a light version of jqueryUI.
 
 ## Creator
 @lou
+
+# Sortable Functionality
+enderdba / Jeecks
 
 ### Usage and demos
 [http://loudev.com](http://loudev.com "jquery.multi-select.js")

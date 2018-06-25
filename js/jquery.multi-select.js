@@ -64,6 +64,7 @@
         }
 
         that.$container.append(that.$selectableContainer);
+        var selUl = that.$selectableContainer;
         that.$container.append(that.$selectionContainer);
         ms.after(that.$container);
 
@@ -93,6 +94,9 @@
       if (typeof that.options.afterInit === 'function') {
         that.options.afterInit.call(this, this.$container);
       }
+
+      $(".ms-selection ul").sortable({ axis: "y" });
+      $(".ms-selection ul li").prepend($('<span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>'));
     },
 
     'generateLisFromOption' : function(option, index, $container){
@@ -540,5 +544,7 @@
       }
     });
 };
+
+
 
 }(window.jQuery);
