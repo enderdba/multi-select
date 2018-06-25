@@ -96,7 +96,10 @@
       }
 
       $(".ms-selection ul").sortable({ axis: "y" });
-      $(".ms-selection ul li").prepend($('<span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>'));
+      $(".ms-selection ul li").mouseenter(function(){$(this).prepend($('<span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>')});
+      $(".ms-selection ul li").mouseleave(function(){
+        $(this).remove($(".glyphicon"))
+      });
     },
 
     'generateLisFromOption' : function(option, index, $container){
